@@ -13,5 +13,8 @@ var timer = setInterval(function() {
 
         document.querySelector("#timer-days").innerHTML =
             days + "<span class='label'>DAY(S)</span>";
+
+        document.querySelector("#timer-hours").innerHTML =
+            ("0" + hours).slice(-2) + "<span class='label'>HR(S)</span>";
     }
 }, 1000);
