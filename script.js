@@ -19,5 +19,8 @@ var timer = setInterval(function() {
 
         document.querySelector("#timer-mins").innerHTML =
             ("0" + mins).slice(-2) + "<span class='label'>MIN(S)</span>";
+
+        document.querySelector("#timer-secs").innerHTML =
+            ("0" + secs).slice(-2) + "<span class='label'>SEC(S)</span>";
     }
 }, 1000);
