@@ -22,5 +22,7 @@ var timer = setInterval(function() {
 
         document.querySelector("#timer-secs").innerHTML =
             ("0" + secs).slice(-2) + "<span class='label'>SEC(S)</span>";
+    } else {
+        document.querySelector("#timer").innerHTML = "The countdown is over!";
     }
 }, 1000);
